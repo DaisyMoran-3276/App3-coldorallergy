@@ -118,12 +118,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
 <!-- 
-Line : Informs the code that this will be classified as a page, and that its ID is one, so this is page one. 
-Line : Creates the header that will go at the top of this page, which is page one 
-Line : Tells the code that on the header I want the words "Question 1" displayed 
-Lines : Tells the code that on the page itself I want the words " Are your eyes watery or itchy?" displayed 
-Line : This creates the Yes button for this question, href="#two" makes it so that when you click the button it will take you to the next page which is page 2, onclick="allergy_Add();" tells the code that if the participant clicks this button it will add 1 point to the function allergy_Add()
-Line : This creates the No button for this question, href="#two" makes it so that when you click the button it will take you to the next page which is page 2, onclick="cold_Add();" tells the code that if the participant clicks this button it will add 1 point to the function cold_Add()	
+Line 128: Informs the code that this will be classified as a page, and that its ID is one, so this is page one. 
+Line 129: Creates the header that will go at the top of this page, which is page one 
+Line 130: Tells the code that on the header I want the words "Question 1" displayed 
+Lines 133 & 134: Tells the code that on the page itself I want the words " Are your eyes watery or itchy?" displayed 
+Line 135: This creates the Yes button for this question, href="#two" makes it so that when you click the button it will take you to the next page which is page 2, onclick="allergy_Add();" tells the code that if the participant clicks this button it will add 1 point to the function allergy_Add()
+Line 136: This creates the No button for this question, href="#two" makes it so that when you click the button it will take you to the next page which is page 2, onclick="cold_Add();" tells the code that if the participant clicks this button it will add 1 point to the function cold_Add()	
 -->	
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
@@ -138,6 +138,14 @@ Line : This creates the No button for this question, href="#two" makes it so tha
     	</div>
 </div>
 
+<!-- 
+Line 149: Informs the code that this will be classified as a page, and that its ID is two, so this is page two. 
+Line 150: Creates the header that will go at the top of this page, which is page two 
+Line 151: Tells the code that on the header I want the words "Question 2" displayed 
+Lines 154 & 155: Tells the code that on the page itself I want the words " Do you have a fever?" displayed 
+Line 156: This creates the Yes button for this question, href="#three" makes it so that when you click the button it will take you to the next page which is page 3, onclick="cold_Add();" tells the code that if the participant clicks this button it will add 1 point to the function cold_Add()
+Line 157: This creates the No button for this question, href="#three" makes it so that when you click the button it will take you to the next page which is page 3, onclick="allergy_Add();" tells the code that if the participant clicks this button it will add 1 point to the function allergy_Add()	
+-->	
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
@@ -151,6 +159,14 @@ Line : This creates the No button for this question, href="#two" makes it so tha
 	</div>
 </div>	
 
+<!-- 
+Line 170: Informs the code that this will be classified as a page, and that its ID is three, so this is page three. 
+Line 171: Creates the header that will go at the top of this page, which is page three 
+Line 172: Tells the code that on the header I want the words "Question 3" displayed 
+Lines 175 & 176: Tells the code that on the page itself I want the words " Do you have a sore throat?" displayed 
+Line 177: This creates the Yes button for this question, href="#four" makes it so that when you click the button it will take you to the next page which is page 4, onclick="cold_Add();" tells the code that if the participant clicks this button it will add 1 point to the function cold_Add()
+Line 178: This creates the No button for this question, href="#four" makes it so that when you click the button it will take you to the next page which is page 4, onclick="allergy_Add();" tells the code that if the participant clicks this button it will add 1 point to the function allergy_Add()	
+-->	
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
@@ -163,7 +179,14 @@ Line : This creates the No button for this question, href="#two" makes it so tha
 		
 	</div>
 </div>	
-	
+<!-- 
+Line 190: Informs the code that this will be classified as a page, and that its ID is four, so this is page four. 
+Line 191: Creates the header that will go at the top of this page, which is page four 
+Line 192: Tells the code that on the header I want the words "Question 4" displayed 
+Lines 195 & 196: Tells the code that on the page itself I want the words " Are your symptoms seasonal or chronic?" displayed 
+Line 197: This creates the Yes button for this question, href="#five" makes it so that when you click the button it will take you to the next page which is page 5, onclick="allergy_Add();" tells the code that if the participant clicks this button it will add 1 point to the function allergy_Add()
+Line 198: This creates the No button for this question, href="#five" makes it so that when you click the button it will take you to the next page which is page 5, onclick="cold_Add();" tells the code that if the participant clicks this button it will add 1 point to the function cold_Add()	
+-->		
 <div class="page" id="four">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
@@ -176,7 +199,14 @@ Line : This creates the No button for this question, href="#two" makes it so tha
 		
 	</div>
 </div>	
-
+<!-- 
+Line 210: Informs the code that this will be classified as a page, and that its ID is five, so this is page five. 
+Line 211: Creates the header that will go at the top of this page, which is page five 
+Line 212: Tells the code that on the header I want the words "Click the button below for your results!" displayed 
+Line 215: id="content" allows this div to be identified with JavaScript, class="w3-container" applies container styling from W3.CSS.
+Line 216: Inside the content container, there is a paragraph (p) with the id="results". This empty paragraph is where the results will be inserted when the user clicks the button below. The id="results" allows it to be linked with JavaScript for updates. 
+Line 217: onclick="showResults();"tells the code that when the clicks the button that says "Show results", the JavaScript function showResults() will be triggered. This function is expected to display the results inside the #results paragraph.
+-->
 <div class="page" id="five">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Click the button below for your results!</h1>
