@@ -117,6 +117,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
+<!-- 
+Line : Informs the code that this will be classified as a page, and that its ID is one, so this is page one. 
+Line : Creates the header that will go at the top of this page, which is page one 
+Line : Tells the code that on the header I want the words "Question 1" displayed 
+Lines : Tells the code that on the page itself I want the words " Are your eyes watery or itchy?" displayed 
+Line : This creates the Yes button for this question, href="#two" makes it so that when you click the button it will take you to the next page which is page 2, onclick="allergy_Add();" tells the code that if the participant clicks this button it will add 1 point to the function allergy_Add()
+Line : This creates the No button for this question, href="#two" makes it so that when you click the button it will take you to the next page which is page 2, onclick="cold_Add();" tells the code that if the participant clicks this button it will add 1 point to the function cold_Add()	
+-->	
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
